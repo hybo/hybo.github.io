@@ -9,12 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@0.19.2/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <style>
-        .nav-card {
-            margin-top: 20px;
-        }
         .nav-card .columns {
             flex-wrap: wrap;
         }
+
         .nav-card .nav-item button {
             width: 100%;
         }
@@ -36,16 +34,35 @@
             </div>
         </section>
 
+        <section class="container mt-4">
+            <div class="field has-addons has-addons-centered">
+                <div class="control">
+                    <div class="select is-primary is-medium">
+                        <select v-model="currentSearchEngineUrl">
+                            <option v-for="(item, index) in searchEngines" :key="index" :value="item.url">{{ item.title }}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control">
+                    <input class="input is-primary is-medium" type="text" v-model="searchKeywords" @keyup.enter="gotoSearch">
+                </div>
+                <div class="control">
+                    <button class="button is-primary is-medium" @click="gotoSearch">搜索</button>
+                </div>
+            </div>
+        </section>
+
         <section class="container">
-            <div class="card nav-card" v-for="(item, index) in navList" :key="index">
+            <div class="card nav-card mt-4" v-for="(item, index) in navList" :key="index">
                 <div class="card-header">
-                    <p class="card-header-title">{{ item.title }}</p>
+                    <div class="card-header-title">{{ item.title }}</div>
                 </div>
                 <div class="card-content">
                     <div class="columns">
                         <div class="column nav-item is-2 has-text-centered" v-for="(navItem, navIndex) in item.navs"
-                        :key="navIndex">
-                            <button class="button is-primary" target="_blank" @click="jumpTo(navItem.url)">{{ navItem.title }}</button>
+                            :key="navIndex">
+                            <button class="button is-primary" target="_blank"
+                                @click="jumpTo(navItem.url)">{{ navItem.title }}</button>
                         </div>
                         <div class="column"></div>
                     </div>
@@ -60,6 +77,30 @@
             el: '#app',
             data() {
                 return {
+                    searchEngines: [
+                        {
+                            title: '必应',
+                            url: 'https://cn.bing.com/search?q='
+                        },
+                        {
+                            title: '多吉',
+                            url: 'https://www.dogedoge.com/results?q='
+                        },
+                        {
+                            title: '搜狗',
+                            url: 'https://www.sogou.com/web?query='
+                        },
+                        {
+                            title: '360',
+                            url: 'https://www.so.com/s?q='
+                        },
+                        {
+                            title: '百度',
+                            url: 'https://www.baidu.com/s?wd='
+                        }
+                    ],
+                    currentSearchEngineUrl: 'https://www.dogedoge.com/results?q=',
+                    searchKeywords: '',
                     navList: []
                 }
             },
@@ -69,12 +110,16 @@
             methods: {
                 fetchData() {
                     axios.get(dataUrl).then(res => {
-                        console.log(res.data)
                         this.navList = res.data
                     }).catch(error => {
                         console.log(error)
                     })
                 },
+
+                gotoSearch() {
+                    window.open(`${this.currentSearchEngineUrl}${this.searchKeywords}`)
+                },
+
                 jumpTo(url) {
                     window.open(url);
                 }
