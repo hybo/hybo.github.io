@@ -175,5 +175,16 @@
         "desc": ""
       }
     ]
+  },
+  {
+	"title": "其他",
+	"navs": [
+	  {
+	    "title": "酷我音乐盒",
+		"icon": "",
+		"url": "http://www.kuwo.cn/rankList",
+		"desc": ""
+	  }
+	]
   }
 ]
