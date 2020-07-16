@@ -3,6 +3,12 @@
     "title": "各种社区 or 网站",
     "navs": [
       {
+        "title": "GitHub",
+        "icon": "",
+        "url": "https://github.com/trending",
+        "desc": "全球最大同性交友网站……"
+      },
+	  {
         "title": "V2EX",
         "icon": "",
         "url": "https://www.v2ex.com/",
