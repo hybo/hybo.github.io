@@ -184,6 +184,12 @@
 		"icon": "",
 		"url": "http://www.kuwo.cn/rankList",
 		"desc": ""
+	  },
+	  {
+	    "title": "A5交易",
+		"icon": "",
+		"url": "https://www.a5.net/",
+		"desc": "A5中介交易"
 	  }
 	]
   }
