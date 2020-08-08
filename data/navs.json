@@ -67,6 +67,12 @@
         "icon": "",
         "url": "https://tophub.today/",
         "desc": "提供各站热榜聚合"
+      },
+      {
+        "title": "the.top",
+        "icon": "",
+        "url": "https://the.top/",
+        "desc": "每日TOP10热点资讯聚合"
       }
     ]
   },
