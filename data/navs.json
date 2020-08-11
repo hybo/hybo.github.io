@@ -73,6 +73,12 @@
         "icon": "",
         "url": "https://the.top/",
         "desc": "每日TOP10热点资讯聚合"
+      },
+      {
+        "title": "全球主机交流论坛",
+        "icon": "",
+        "url": "https://www.hostloc.com/",
+        "desc": "全球主机交流论坛"
       }
     ]
   },
