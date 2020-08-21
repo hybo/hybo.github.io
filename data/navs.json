@@ -79,7 +79,13 @@
         "icon": "",
         "url": "https://www.hostloc.com/",
         "desc": "全球主机交流论坛"
-      }
+      },
+	  {
+		"title": "HelloGitHub",
+		"icon": "",
+		"url": "https://hellogithub.com/",
+		"desc": "分享GitHub上有趣、入门级的开源项目"
+	  }
     ]
   },
   {
