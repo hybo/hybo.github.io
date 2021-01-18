@@ -90,6 +90,7 @@
             methods: {
                 fetchData() {
                     axios.get(dataUrl).then(res => {
+                        console.log(res)
                         this.searchEngines = res.data.searchEngines
                         this.navList = res.data.navs
                     }).catch(error => {
