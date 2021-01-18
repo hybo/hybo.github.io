@@ -15,6 +15,8 @@
 
         .nav-card .nav-item button {
             width: 100%;
+            overflow: hidden;
+            padding-left: 10px;
         }
     </style>
 </head>
@@ -39,7 +41,7 @@
                 <div class="control">
                     <div class="select is-primary is-medium">
                         <select v-model="currentSearchEngineIndex">
-                            <option v-for="(item, index) in searchEngines" :key="index" :value="item.url">{{ item.title }}</option>
+                            <option v-for="(item, index) in searchEngines" :key="index" :value="index">{{ item.title }}</option>
                         </select>
                     </div>
                 </div>
@@ -53,18 +55,22 @@
         </section>
 
         <section class="container">
-            <div class="card nav-card mt-4" v-for="(item, index) in navList" :key="index">
-                <div class="card-header">
-                    <div class="card-header-title">{{ item.title }}</div>
-                </div>
-                <div class="card-content">
-                    <div class="columns">
-                        <div class="column nav-item is-2 has-text-centered" v-for="(navItem, navIndex) in item.navs"
-                            :key="navIndex">
-                            <button class="button is-primary is-outlined" target="_blank"
-                                @click="jumpTo(navItem.url)">{{ navItem.title }}</button>
+            <div class="columns">
+                <div class="column is-10">
+                    <div class="card nav-card mt-4" v-for="(item, index) in navList" :key="index">
+                        <div class="card-header">
+                            <div class="card-header-title">{{ item.title }}</div>
                         </div>
-                        <div class="column"></div>
+                        <div class="card-content">
+                            <div class="columns">
+                                <div class="column nav-item is-2 has-text-centered" v-for="(navItem, navIndex) in item.navItems"
+                                    :key="navIndex">
+                                    <button class="button is-primary is-outlined" target="_blank"
+                                        @click="jumpTo(navItem.url)">{{ navItem.title }}</button>
+                                </div>
+                                <div class="column"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -90,7 +96,6 @@
             methods: {
                 fetchData() {
                     axios.get(dataUrl).then(res => {
-                        console.log(JSON.parse(res))
                         this.searchEngines = res.data.searchEngines
                         this.navList = res.data.navs
                     }).catch(error => {
@@ -99,7 +104,7 @@
                 },
 
                 gotoSearch() {
-                    window.open(`${this.searchEngines[this.currentSearchEngineIndex]}${this.searchKeywords}`)
+                    window.open(`${this.searchEngines[this.currentSearchEngineIndex].url}${this.searchKeywords}`)
                 },
 
                 jumpTo(url) {

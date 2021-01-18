@@ -1,12 +1,11 @@
 {
-    "searchEngines": [
-        {
+    "searchEngines": [{
             "title": "必应",
             "url": "https://cn.bing.com/search?q="
         },
         {
             "title": "Magi",
-            "url": "https://magi.com/search?q=",
+            "url": "https://magi.com/search?q="
         },
         {
             "title": "搜狗",
@@ -21,225 +20,218 @@
             "url": "https://www.baidu.com/s?wd="
         }
     ],
-    "navs": [
-    {
-        "title": "各种社区 or 网站",
-        "items": [
-            {
-                "title": "GitHub",
+    "navs": [{
+            "title": "各种社区 or 网站",
+            "navItems": [{
+                    "title": "GitHub",
+                    "icon": "",
+                    "url": "https://github.com/trending",
+                    "desc": "全球最大同性交友网站……"
+                },
+                {
+                    "title": "V2EX",
+                    "icon": "",
+                    "url": "https://www.v2ex.com/",
+                    "desc": "V2EX 是一个关于分享和探索的地方"
+                },
+                {
+                    "title": "learnku",
+                    "icon": "",
+                    "url": "https://learnku.com/laravel",
+                    "desc": "一个编程者的知识社区"
+                },
+                {
+                    "title": "SegmentFault 思否",
+                    "icon": "",
+                    "url": "https://segmentfault.com/",
+                    "desc": "一个开发者社区"
+                },
+                {
+                    "title": "牛客网",
+                    "icon": "",
+                    "url": "https://www.nowcoder.com/",
+                    "desc": "面试、求职、试题"
+                },
+                {
+                    "title": "独立开发者",
+                    "icon": "",
+                    "url": "https://indiehackers.net/",
+                    "desc": "一个独立开发者社区"
+                },
+                {
+                    "title": "凹凸实验室",
+                    "icon": "",
+                    "url": "https://aotu.io/",
+                    "desc": "一个前端技术分享社区"
+                },
+                {
+                    "title": "学院君",
+                    "icon": "",
+                    "url": "https://xueyuanjun.com/",
+                    "desc": "致力于提供优质Laravel/Golang中文学习资料的网站"
+                },
+                {
+                    "title": "掘金",
+                    "icon": "",
+                    "url": "https://juejin.im/",
+                    "desc": "一个帮助开发者成长的社区"
+                },
+                {
+                    "title": "今日热榜",
+                    "icon": "",
+                    "url": "https://tophub.today/",
+                    "desc": "提供各站热榜聚合"
+                },
+                {
+                    "title": "全球主机交流论坛",
+                    "icon": "",
+                    "url": "https://www.hostloc.com/",
+                    "desc": "全球主机交流论坛"
+                }
+            ]
+        },
+        {
+            "title": "博客",
+            "navItems": [{
+                    "title": "廖雪峰的官方网站",
+                    "icon": "",
+                    "url": "https://www.liaoxuefeng.com/",
+                    "desc": "研究互联网产品和技术，提供原创中文精品教程"
+                },
+                {
+                    "title": "overtrue 安正超",
+                    "icon": "",
+                    "url": "https://overtrue.me/",
+                    "desc": "php技术博客"
+                },
+                {
+                    "title": "静觅",
+                    "icon": "",
+                    "url": "https://cuiqingcai.com/",
+                    "desc": "崔庆才的个人博客"
+                },
+                {
+                    "title": "Python爬虫与数据挖掘",
+                    "icon": "",
+                    "url": "http://pdcfighting.com/",
+                    "desc": "一个分享Python爬虫与数据挖掘的博客"
+                },
+                {
+                    "title": "程序员副业",
+                    "icon": "",
+                    "url": "http://www.xiezuoguan.cn/",
+                    "desc": "一个程序员副业分享博客"
+                },
+                {
+                    "title": "豆约翰",
+                    "icon": "",
+                    "url": "https://www.songbo.info/",
+                    "desc": "一个分享编程开发小案例教程的博客"
+                }
+            ]
+        },
+        {
+            "title": "视频课程",
+            "navItems": [{
+                    "title": "网易云课堂",
+                    "icon": "",
+                    "url": "https://study.163.com/",
+                    "desc": ""
+                },
+                {
+                    "title": "腾讯课堂",
+                    "icon": "",
+                    "url": "https://ke.qq.com/",
+                    "desc": ""
+                },
+                {
+                    "title": "优达学城(Udacity)",
+                    "icon": "",
+                    "url": "http://youdaxue.com/",
+                    "desc": ""
+                },
+                {
+                    "title": "学堂在线",
+                    "icon": "",
+                    "url": "https://next.xuetangx.com/",
+                    "desc": ""
+                },
+                {
+                    "title": "公开课网",
+                    "icon": "",
+                    "url": "https://www.openke.net/",
+                    "desc": ""
+                },
+                {
+                    "title": "Coursera",
+                    "icon": "",
+                    "url": "https://www.coursera.org/",
+                    "desc": ""
+                },
+                {
+                    "title": "慕课网",
+                    "icon": "",
+                    "url": "https://www.imooc.com/",
+                    "desc": ""
+                },
+                {
+                    "title": "51CTO学院",
+                    "icon": "",
+                    "url": "https://edu.51cto.com/",
+                    "desc": ""
+                },
+                {
+                    "title": "好知网",
+                    "icon": "",
+                    "url": "http://www.howzhi.com/",
+                    "desc": ""
+                },
+                {
+                    "title": "如鹏网",
+                    "icon": "",
+                    "url": "https://www.rupeng.com/",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "title": "常用工具",
+            "navItems": [{
+                "title": "GitMind",
                 "icon": "",
-                "url": "https://github.com/trending",
-                "desc": "全球最大同性交友网站……"
-            },
-            {
-                "title": "V2EX",
+                "url": "https://gitmind.cn/",
+                "desc": "免费在线思维导图软件"
+            }]
+        },
+        {
+            "title": "在线文档",
+            "navItems": [{
+                "title": "ThinkPHP5.1",
                 "icon": "",
-                "url": "https://www.v2ex.com/",
-                "desc": "V2EX 是一个关于分享和探索的地方"
-            },
-            {
-                "title": "learnku",
-                "icon": "",
-                "url": "https://learnku.com/laravel",
-                "desc": "一个编程者的知识社区"
-            },
-            {
-                "title": "SegmentFault 思否",
-                "icon": "",
-                "url": "https://segmentfault.com/",
-                "desc": "一个开发者社区"
-            },
-            {
-                "title": "牛客网",
-                "icon": "",
-                "url": "https://www.nowcoder.com/",
-                "desc": "面试、求职、试题"
-            },
-            {
-                "title": "独立开发者",
-                "icon": "",
-                "url": "https://indiehackers.net/",
-                "desc": "一个独立开发者社区"
-            },
-            {
-                "title": "凹凸实验室",
-                "icon": "",
-                "url": "https://aotu.io/",
-                "desc": "一个前端技术分享社区"
-            },
-            {
-                "title": "学院君",
-                "icon": "",
-                "url": "https://xueyuanjun.com/",
-                "desc": "致力于提供优质Laravel/Golang中文学习资料的网站"
-            },
-            {
-                "title": "掘金",
-                "icon": "",
-                "url": "https://juejin.im/",
-                "desc": "一个帮助开发者成长的社区"
-            },
-            {
-                "title": "今日热榜",
-                "icon": "",
-                "url": "https://tophub.today/",
-                "desc": "提供各站热榜聚合"
-            },
-            {
-                "title": "全球主机交流论坛",
-                "icon": "",
-                "url": "https://www.hostloc.com/",
-                "desc": "全球主机交流论坛"
-            }
-        ]
-    },
-    {
-        "title": "博客",
-        "items": [
-            {
-                "title": "廖雪峰的官方网站",
-                "icon": "",
-                "url": "https://www.liaoxuefeng.com/",
-                "desc": "研究互联网产品和技术，提供原创中文精品教程"
-            },
-            {
-                "title": "overtrue 安正超",
-                "icon": "",
-                "url": "https://overtrue.me/",
-                "desc": "php技术博客"
-            },
-            {
-                "title": "静觅",
-                "icon": "",
-                "url": "https://cuiqingcai.com/",
-                "desc": "崔庆才的个人博客"
-            },
-            {
-                "title": "Python爬虫与数据挖掘",
-                "icon": "",
-                "url": "http://pdcfighting.com/",
-                "desc": "一个分享Python爬虫与数据挖掘的博客"
-            },
-            {
-                "title": "程序员副业",
-                "icon": "",
-                "url": "http://www.xiezuoguan.cn/",
-                "desc": "一个程序员副业分享博客"
-            },
-            {
-                "title": "豆约翰",
-                "icon": "",
-                "url": "https://www.songbo.info/",
-                "desc": "一个分享编程开发小案例教程的博客"
-            }
-        ]
-    },
-    {
-        "title": "视频课程",
-        "items": [
-            {
-                "title": "网易云课堂",
-                "icon": "",
-                "url": "https://study.163.com/",
+                "url": "https://www.kancloud.cn/manual/thinkphp5_1/353948",
                 "desc": ""
-            },
-            {
-                "title": "腾讯课堂",
+            }, {
+                "title": "ThinkPHP6.0",
                 "icon": "",
-                "url": "https://ke.qq.com/",
+                "url": "https://www.kancloud.cn/manual/thinkphp6_0/1037481",
                 "desc": ""
-            },
-            {
-                "title": "优达学城(Udacity)",
-                "icon": "",
-                "url": "http://youdaxue.com/",
-                "desc": ""
-            },
-            {
-                "title": "学堂在线",
-                "icon": "",
-                "url": "https://next.xuetangx.com/",
-                "desc": ""
-            },
-            {
-                "title": "公开课网",
-                "icon": "",
-                "url": "https://www.openke.net/",
-                "desc": ""
-            },
-            {
-                "title": "Coursera",
-                "icon": "",
-                "url": "https://www.coursera.org/",
-                "desc": ""
-            },
-            {
-                "title": "慕课网",
-                "icon": "",
-                "url": "https://www.imooc.com/",
-                "desc": ""
-            },
-            {
-                "title": "51CTO学院",
-                "icon": "",
-                "url": "https://edu.51cto.com/",
-                "desc": ""
-            },
-            {
-                "title": "好知网",
-                "icon": "",
-                "url": "http://www.howzhi.com/",
-                "desc": ""
-            },
-            {
-                "title": "如鹏网",
-                "icon": "",
-                "url": "https://www.rupeng.com/",
-                "desc": ""
-            }
-        ]
-    },
-    {
-        "title": "常用工具",
-        "items": [
-            {
-            "title": "GitMind",
-            "icon": "",
-            "url": "https://gitmind.cn/",
-            "desc": "免费在线思维导图软件"
-        }]
-    },
-    {
-        "title": "在线文档",
-        "items": [
-            {
-            "title": "ThinkPHP5.1",
-            "icon": "",
-            "url": "https://www.kancloud.cn/manual/thinkphp5_1/353948",
-            "desc": ""
-        },{
-            "title": "ThinkPHP6.0",
-            "icon": "",
-            "url": "https://www.kancloud.cn/manual/thinkphp6_0/1037481",
-            "desc": ""
-        }]
-    },
-    {
-        "title": "其他",
-        "items": [
-            {
-                "title": "酷我音乐盒",
-                "icon": "",
-                "url": "http://www.kuwo.cn/rankList",
-                "desc": ""
-            },
-            {
-                "title": "A5交易",
-                "icon": "",
-                "url": "https://www.a5.net/",
-                "desc": "A5中介交易"
-            }
-        ]
-    }
-]
+            }]
+        },
+        {
+            "title": "其他",
+            "navItems": [{
+                    "title": "酷我音乐盒",
+                    "icon": "",
+                    "url": "http://www.kuwo.cn/rankList",
+                    "desc": ""
+                },
+                {
+                    "title": "A5交易",
+                    "icon": "",
+                    "url": "https://www.a5.net/",
+                    "desc": "A5中介交易"
+                }
+            ]
+        }
+    ]
 }
