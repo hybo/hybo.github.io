@@ -38,7 +38,7 @@
             <div class="field has-addons has-addons-centered">
                 <div class="control">
                     <div class="select is-primary is-medium">
-                        <select v-model="currentSearchEngineUrl">
+                        <select v-model="currentSearchEngineIndex">
                             <option v-for="(item, index) in searchEngines" :key="index" :value="item.url">{{ item.title }}</option>
                         </select>
                     </div>
