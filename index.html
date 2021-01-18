@@ -15,8 +15,10 @@
 
         .nav-card .nav-item button {
             width: 100%;
+            display: block;
             overflow: hidden;
-            padding-left: 10px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -66,7 +68,7 @@
                                 <div class="column nav-item is-2 has-text-centered" v-for="(navItem, navIndex) in item.navItems"
                                     :key="navIndex">
                                     <button class="button is-primary is-outlined" target="_blank"
-                                        @click="jumpTo(navItem.url)">{{ navItem.title }}</button>
+                                        @click="jumpTo(navItem.url)" :title="navItem.title">{{ navItem.title }}</button>
                                 </div>
                                 <div class="column"></div>
                             </div>
