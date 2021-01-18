@@ -194,6 +194,20 @@
         }]
     },
     {
+        "title": "在线文档",
+        "navs": [{
+            "title": "ThinkPHP5.1",
+            "icon": "",
+            "url": "https://www.kancloud.cn/manual/thinkphp5_1/353948",
+            "desc": ""
+        },{
+            "title": "ThinkPHP6.0",
+            "icon": "",
+            "url": "https://www.kancloud.cn/manual/thinkphp6_0/1037481",
+            "desc": ""
+        }]
+    },
+    {
         "title": "其他",
         "navs": [{
                 "title": "酷我音乐盒",
