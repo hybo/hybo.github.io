@@ -189,7 +189,14 @@
                 "icon": "",
                 "url": "https://gitmind.cn/",
                 "desc": "免费在线思维导图软件"
-            }]
+            },
+                {
+                    "title": "DeepL翻译",
+                    "icon": "",
+                    "url": "https://www.deepl.com/translator",
+                    "desc": "DeepL，一款优于谷歌（Google）、微软（Microsoft）和脸书（Facebook）的在线翻译器"
+                }
+            ]
         },
         {
             "title": "在线文档",
