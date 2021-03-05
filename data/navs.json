@@ -21,7 +21,7 @@
         }
     ],
     "navs": [{
-            "title": "各种社区 or 网站",
+            "title": "酷站",
             "navItems": [{
                     "title": "GitHub",
                     "icon": "",
@@ -33,6 +33,12 @@
                     "icon": "",
                     "url": "https://www.v2ex.com/",
                     "desc": "V2EX 是一个关于分享和探索的地方"
+                },
+                {
+                    "title": "吾爱破解",
+                    "icon": "",
+                    "url": "https://www.52pojie.cn/",
+                    "desc": "致力于软件安全与病毒分析的前沿"
                 },
                 {
                     "title": "learnku",
