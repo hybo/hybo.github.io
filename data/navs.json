@@ -137,7 +137,7 @@
             ]
         },
         {
-            "title": "视频课程",
+            "title": "在线学习",
             "navItems": [{
                     "title": "网易云课堂",
                     "icon": "",
@@ -190,6 +190,12 @@
                     "title": "如鹏网",
                     "icon": "",
                     "url": "https://www.rupeng.com/",
+                    "desc": ""
+                },
+                {
+                    "title": "Linux就该这么学",
+                    "icon": "",
+                    "url": "https://www.linuxprobe.com/",
                     "desc": ""
                 }
             ]
